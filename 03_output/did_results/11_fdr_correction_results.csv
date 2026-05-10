@@ -1,0 +1,20 @@
+family,label,coef,p_raw,p_fdr,fdr_sig,sig_raw,sig_fdr
+frame_HC3,Beneficial,5e-06,0.9994,0.9994,False,ns,ns
+frame_HC3,Crime,-0.005351,0.6965,0.7352,False,ns,ns
+frame_HC3,Culture,-0.013733,0.0107,0.0508,False,**,*
+frame_HC3,Economic,-0.002122,0.5939,0.7053,False,ns,ns
+frame_HC3,Exclusion,0.022364,0.0007,0.0114,True,***,**
+frame_HC3,Family,0.010333,0.0274,0.1041,False,**,ns
+frame_HC3,Labor,-0.005433,0.5145,0.6517,False,ns,ns
+frame_HC3,Legality,0.007067,0.1586,0.2739,False,ns,ns
+frame_HC3,Migration,0.00624,0.2622,0.4152,False,ns,ns
+frame_HC3,Sympathetic,0.004702,0.3292,0.4677,False,ns,ns
+frame_HC3,Threat,0.001386,0.639,0.7142,False,ns,ns
+heterogeneity,Party=D,0.005927,0.0721,0.1712,False,*,ns
+heterogeneity,Party=R,0.005703,0.0427,0.1346,False,**,ns
+heterogeneity,Cohort=Early (≤109),0.008473,0.0033,0.0209,True,***,**
+heterogeneity,Cohort=Late (≥110),0.004545,0.1108,0.2339,False,ns,ns
+heterogeneity,Party=D × Early (≤109),0.012522,0.0012,0.0114,True,***,**
+heterogeneity,Party=D × Late (≥110),0.003454,0.3446,0.4677,False,ns,ns
+heterogeneity,Party=R × Early (≤109),0.006043,0.0496,0.1346,False,**,ns
+heterogeneity,Party=R × Late (≥110),0.005514,0.124,0.2356,False,ns,ns

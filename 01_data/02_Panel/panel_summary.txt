@@ -1,0 +1,9 @@
+=== Panel Summary ===
+Total speeches   : 49,973
+Treatment (H->S) : 35
+Control (H-only) : 67
+
+period      post    pre
+treatment              
+0          11969  15594
+1          13868   8542

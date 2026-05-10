@@ -1,0 +1,87 @@
+Project root: /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin
+Speaker metadata (NOMINATE baseline): /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/01_data/01_RawCorpus/speaker_metadata_updated0501.csv
+Corpus: /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/01_data/01_RawCorpus/congress_speech_corpus_updated0430.csv
+
+=== Summary ===
+N_treated in transition_index: 35
+N_treated matched (main, >=1 control): 33
+High-quality sample (dist<=2.0): 32 treated, 95 control
+
+Pair quality breakdown (main):
+              Var1 Freq
+1       borderline    6
+2             good   25
+3 has_poor_control    2
+
+Control reuse summary (main):
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   1.338   1.000   6.000 
+
+Supplementary balance (treated vs matched controls):
+             covariate mean_treated mean_control sd_treated       SMD    KS_D
+  dw_nom_dim1_baseline       0.1327       0.1254     0.4296  0.017046 0.07071
+ house_tenure_at_event       2.7273       2.7374     1.6254 -0.006214 0.02020
+                cohort     108.4848     108.4747     2.1083  0.004791 0.03030
+   KS_p n_treated n_control
+ 0.9997        33        99
+ 1.0000        33        99
+ 1.0000        33        99
+
+=== Timestamped log ===
+2026-05-09 12:56:12 Loading speech aggregates from corpus (selected columns only)...
+2026-05-09 12:56:12 Unique speakers (politicians table): 1492
+2026-05-09 12:56:12 Treated (transition_index): 35
+2026-05-09 12:56:12 House party counts (any term): D=2805, R=2905, I=3, =1
+2026-05-09 12:56:12 Main calipers: tenure=2 cohort=1 (PHASE2_STRICT_COHORT=1 forces paper 2/1)
+2026-05-09 12:56:12 === Variant: main (ratio=3 replace=TRUE) ===
+2026-05-09 12:56:22 Treated attempted: 35; matched with >=1 control: 33
+2026-05-09 12:56:22 Unmatched / failed (first 30):
+F000444: empty_pool_after_marginal_caliper
+S000033: treated_party_not_DR
+2026-05-09 12:56:22 Wrote /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/03_output/phase2_matching/matched_sample.csv (132 rows)
+2026-05-09 12:56:22 bal_plot_covariates.pdf written
+2026-05-09 12:56:22 === Variant: 1to1_replace (ratio=1 replace=TRUE) ===
+2026-05-09 12:56:30 Treated attempted: 35; matched with >=1 control: 33
+2026-05-09 12:56:30 Unmatched / failed (first 30):
+F000444: empty_pool_after_marginal_caliper
+S000033: treated_party_not_DR
+2026-05-09 12:56:30 Wrote /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/03_output/phase2_matching/matched_sample_robust_1to1_replace.csv (66 rows)
+2026-05-09 12:56:30 === Variant: 1to3_no_replace (ratio=3 replace=FALSE) ===
+2026-05-09 12:56:38 Treated attempted: 35; matched with >=1 control: 33
+2026-05-09 12:56:38 Unmatched / failed (first 30):
+F000444: empty_pool_after_marginal_caliper
+S000033: treated_party_not_DR
+2026-05-09 12:56:38 Wrote /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/03_output/phase2_matching/matched_sample_robust_1to3_no_replace.csv (132 rows)
+2026-05-09 12:56:38 === Variant: caliper_tight (ratio=3 replace=TRUE) ===
+2026-05-09 12:56:46 Treated attempted: 35; matched with >=1 control: 29
+2026-05-09 12:56:46 Unmatched / failed (first 30):
+C001075: matchit_error_or_no_match
+D000607: empty_pool_after_marginal_caliper
+F000444: empty_pool_after_marginal_caliper
+G000555: matchit_error_or_no_match
+H001042: matchit_error_or_no_match
+S000033: treated_party_not_DR
+2026-05-09 12:56:46 Wrote /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/03_output/phase2_matching/matched_sample_robust_caliper_tight.csv (111 rows)
+2026-05-09 12:56:46 === Variant: caliper_wide (ratio=3 replace=TRUE) ===
+2026-05-09 12:56:56 Treated attempted: 35; matched with >=1 control: 33
+2026-05-09 12:56:56 Unmatched / failed (first 30):
+F000444: matchit_error_or_no_match
+S000033: treated_party_not_DR
+2026-05-09 12:56:56 Wrote /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/03_output/phase2_matching/matched_sample_robust_caliper_wide.csv (132 rows)
+2026-05-09 12:56:56 Control reuse (main): rows=99 unique control IDs=74
+2026-05-09 12:56:56 Replacement count distribution (controls by #pairs):
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   1.000   1.338   1.000   6.000 
+2026-05-09 12:56:56 High-reuse controls (>=3 pairs): A000055(x6), G000546(x4), L000491(x4), G000377(x3)
+2026-05-09 12:56:56 Match distance per pair: mean_max=0.771, good=25 borderline=6 has_poor=2 (threshold=2.0)
+2026-05-09 12:56:56 Rewrote matched_sample.csv with dist_quality column (132 rows)
+2026-05-09 12:56:56 High-quality matched sample (dist<=2.0): 32 treated, 95 control rows -> /home/jain_farstrider/Course_Coding/Cogs206_MachineLearnin/03_output/phase2_matching/matched_sample_highquality.csv
+2026-05-09 12:56:56 Supplementary balance (treated n=33 vs matched control n=99):
+             covariate mean_treated mean_control sd_treated       SMD    KS_D
+  dw_nom_dim1_baseline       0.1327       0.1254     0.4296  0.017046 0.07071
+ house_tenure_at_event       2.7273       2.7374     1.6254 -0.006214 0.02020
+                cohort     108.4848     108.4747     2.1083  0.004791 0.03030
+   KS_p n_treated n_control
+ 0.9997        33        99
+ 1.0000        33        99
+ 1.0000        33        99

@@ -1,0 +1,25 @@
+# Raw corpus — too large for GitHub (1.2 GB)
+01_data/01_RawCorpus/congress_speech_corpus_updated0430.csv
+
+# Panel speech corpora — derived from raw corpus, regenerable (69–79 MB each)
+01_data/02_Panel/control_corpus.csv
+01_data/02_Panel/treatment_speech_corpus.csv
+
+# Panel speeches parquet — regenerable (62 MB)
+03_output/panel_speeches.parquet
+
+# Matching frozen archive
+03_output/phase2_matching/phase2_matching_freeze_20260509.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# R session artifacts
+.Rhistory
+.RData
+
+# OS artifacts
+.DS_Store
+Thumbs.db

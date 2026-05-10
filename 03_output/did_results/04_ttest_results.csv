@@ -1,0 +1,4 @@
+test,description,group,n_treat,n_ctrl,mean_treat,mean_ctrl,did,t,df,p,sig
+Two-sample Welch t-test (delta_treat vs delta_ctrl),DiD equivalent: do treatment and control differ in pre-post change?,treatment vs control,25.0,56.0,0.010559,0.002778,0.00778,2.2996,79,0.0253,**
+One-sample t-test (delta_treat != 0),Do treatment speakers change language after transition?,treatment,25.0,,0.010559,,,4.0095,24,0.0005,***
+One-sample t-test (delta_ctrl != 0) [placebo],Placebo: do control speakers change language over time?,control,,56.0,,0.002778,,1.3079,55,0.1963,ns

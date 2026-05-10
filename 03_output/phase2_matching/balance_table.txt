@@ -1,0 +1,19 @@
+Balance Measures
+                         Type Diff.Un Diff.Adj    M.Threshold
+dw_nom_dim1_baseline  Contin.  0.0170   0.0170 Balanced, <0.1
+house_tenure_at_event Contin. -0.0062  -0.0062 Balanced, <0.1
+cohort                Contin.  0.0048   0.0048 Balanced, <0.1
+
+Balance tally for mean differences
+                   count
+Balanced, <0.1         3
+Not Balanced, >0.1     0
+
+Variable with the greatest mean difference
+             Variable Diff.Adj    M.Threshold
+ dw_nom_dim1_baseline    0.017 Balanced, <0.1
+
+Effective sample sizes
+           Control Treated
+Unadjusted      99      33
+Adjusted        99      33

@@ -1,0 +1,3 @@
+test,treat_mean,ctrl_mean,t_stat,p,sig,interpretation
+Baseline level t-test (treat_pre vs ctrl_pre),0.756695,0.756932,-0.0948,0.9247,ns,No baseline difference
+Within-pre time trend (treatment),,,-0.001212,1.0,ns,No significant pre-trend

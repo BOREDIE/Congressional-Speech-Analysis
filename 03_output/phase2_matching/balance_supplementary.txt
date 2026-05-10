@@ -1,0 +1,8 @@
+             covariate mean_treated mean_control sd_treated       SMD    KS_D
+  dw_nom_dim1_baseline       0.1327       0.1254     0.4296  0.017046 0.07071
+ house_tenure_at_event       2.7273       2.7374     1.6254 -0.006214 0.02020
+                cohort     108.4848     108.4747     2.1083  0.004791 0.03030
+   KS_p n_treated n_control
+ 0.9997        33        99
+ 1.0000        33        99
+ 1.0000        33        99

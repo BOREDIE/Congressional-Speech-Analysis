@@ -1,0 +1,3 @@
+dw_nom_dim1_baseline D=0.0707 p=0.999 n_t=33 n_c=99
+house_tenure_at_event D=0.0202 p=1 n_t=33 n_c=99
+cohort D=0.0303 p=0.9979 n_t=33 n_c=99
