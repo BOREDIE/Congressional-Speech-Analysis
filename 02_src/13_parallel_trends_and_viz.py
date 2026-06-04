@@ -1,17 +1,5 @@
 """
 Layer 2: Parallel trends check + visualization.
-
-1. Parallel trends test
-   - For treatment speakers: compute Y at each pre-period congress
-     and test if there is a within-pre time trend (slope ≠ 0)
-   - Compare treatment vs control pre-period baseline levels (t-test)
-   - Event study: plot average Y at each congress relative to transition
-
-2. Visualizations
-   - Fig 1: Mean Y_bar by group × period (bar + CI)
-   - Fig 2: DiD coefficients by frame (speaker-level, with CI)
-   - Fig 3: Event study plot (treatment vs control, relative time)
-   - Fig 4: Parallel trends — within-pre Y by congress
 """
 
 from pathlib import Path

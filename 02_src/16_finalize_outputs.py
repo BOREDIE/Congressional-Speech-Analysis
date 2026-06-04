@@ -1,21 +1,5 @@
 """
 Finalize all outputs: fix data quality issues, save missing CSVs,
-generate missing figures.
-
-Missing CSVs:
-  - fdr_correction_results.csv
-  - parallel_trends_stats.csv
-  - event_study_data.csv
-  - descriptive_stats.csv
-
-Data fixes:
-  - did_regression_results.csv: fill NaN sig with 'ns'
-
-Missing figures:
-  - fig7_robustness.png
-  - fig9_ttest_boxplot.png
-  - fig10_fdr.png
-  - fig11_loo.png
 """
 
 from pathlib import Path

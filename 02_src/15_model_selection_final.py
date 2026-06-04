@@ -1,13 +1,5 @@
 """
 Final model selection:
-
-Part A — All-subset confounder model comparison (2^5 = 32 models)
-  Speaker-level DiD with every combination of the 5 DAG confounders.
-  Select best model by AIC; verify DiD coefficient stability.
-
-Part B — LMM vs OLS comparison (word-level)
-  Linear Mixed Model with speaker random effect vs M5 (speaker FE).
-  Tests whether the main finding holds under a more efficient estimator.
 """
 
 from pathlib import Path

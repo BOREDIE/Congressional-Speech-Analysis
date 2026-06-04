@@ -1,16 +1,5 @@
 """
 Path B: Speaker-level DiD.
-
-Aggregates word-period observations to speaker × period level.
-True unit of analysis = speaker. N ≈ 25 treatment + control speakers.
-
-Steps:
-  1. Load did_analysis_data.csv (word-level Y already computed)
-  2. Aggregate to speaker × period: weighted mean Y (weight = occurrence_count)
-  3. Keep only speakers with BOTH pre and post observations
-  4. DiD: Y_bar ~ post + treat_x_post, HC2/HC3 robust SE
-  5. Also run frame-level speaker aggregation
-  6. Randomization Inference (Path A) on speaker-level data
 """
 
 from pathlib import Path

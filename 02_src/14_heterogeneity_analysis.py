@@ -1,10 +1,5 @@
 """
 Layer 3: Heterogeneity analysis.
-
-1. By party (Democrat / Republican)
-2. By cohort (early 107-109 vs late 110-114 transitions)
-3. By chamber origin (all treatment are H→S, but check within-treatment variation)
-4. Visualization: subgroup DiD coefficients
 """
 
 from pathlib import Path
